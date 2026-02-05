@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(120deg, #0f172a, #020617);
+  color: #e5e7eb;
+  line-height: 1.6;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  padding: 20px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(2, 6, 23, 0.7);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links a {
+  color: #cbd5f5;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 80px;
+}
+
+.home-container {
+  max-width: 1200px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 100px;
+}
+
+.home-left h1 {
+  font-size: 56px;
+  line-height: 1.2;
+}
+
+.home-left span {
+  color: #38bdf8;
+}
+
+.subtitle {
+  font-size: 28px;
+  color: #94a3b8;
+  margin: 16px 0 32px;
+  max-width: 520px;
+}
+
+.big-photo {
+  width: 360px;
+  height: 540px;
+  object-fit: cover;
+  border-radius: 28px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+  transition: 0.4s ease;
+}
+
+.big-photo:hover {
+  transform: translateY(-12px) scale(1.03);
+}
+.btn {
+  padding: 12px 28px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s ease;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.primary {
+  background: #38bdf8;
+  color: #020617;
+}
+
+.primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(56, 189, 248, 0.4);
+}
+
+.outline {
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+  margin-left: 12px;
+}
+
+.outline:hover {
+  background: rgba(56, 189, 248, 0.1);
+}
+
+.section {
+  max-width: 1200px;
+  margin: 160px auto;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.section h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  margin-top: 40px;
+}
+
+.edu-box {
+  padding: 32px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: 0.3s ease;
+}
+
+.edu-box:hover {
+  transform: translateY(-8px);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  margin-top: 40px;
+}
+
+.skill-box {
+  padding: 48px 24px;
+  text-align: center;
+  font-size: 22px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: 0.35s ease;
+}
+
+.skill-box:hover {
+  transform: translateY(-12px) scale(1.02);
+  background: rgba(56, 189, 248, 0.15);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+  margin-top: 60px;
+}
+
+.project-card.big {
+  padding: 28px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: 0.35s ease;
+}
+
+.project-card.big img {
+  width: 450px;
+  height: 500px;
+  /* object-fit: cover; */
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+
+.project-card.big:hover {
+  transform: translateY(-12px) scale(1.01);
+}
+
+.tags span {
+  display: inline-block;
+  padding: 6px 14px;
+  margin-right: 8px;
+  border-radius: 999px;
+  background: rgba(56, 189, 248, 0.15);
+  color: #7dd3fc;
+  font-size: 12px;
+}
+
+.contact-card {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.footer-grid {
+  max-width: 1200px;
+  margin: 160px auto 40px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 80px;
+}
+
+.footer-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-box a {
+  color: #7dd3fc;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.footer-box a:hover {
+  text-decoration: underline;
+  transform: translateX(4px);
+}
+
+.copy {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #94a3b8;
+}
+.btn-group{
+    margin-top: 40px;
+}
+.content{
+    margin-top: 10px;
+}
